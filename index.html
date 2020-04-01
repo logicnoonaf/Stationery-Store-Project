@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.1/flatly/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="pagination_plugin/css/abootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="pagination_plugin/css/setin.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">/ -->
+    <link rel="stylesheet" type="text/css" href="filter_plugin/css/normalize.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css"> -->
+    <link href="filter_plugin/css/range-picker.css" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+    <!-- <script src="js/jquery.min.js" type="text/javascript"></script> -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.js"></script> -->
+    <script src="form_plugin/js/input.js"></script>
+    <script src="list_plugin/js/nav.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="slider_plugin/css/normalize.css" />
+    <!--CSS RESET-->
+    <link rel="stylesheet" type="text/css" href="slider_plugin/css/htmleaf-demo.css">
+    <!--演示页面样式，使用时可以不引用-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slider_plugin/dist/partialviewslider.css">
+    <link rel="stylesheet" type="text/css" href="slider_plugin/dist/trans.css">
+
+
+    <script src="font_rside/iconfont.js"></script>
+
+    <script src="font_header/iconfont.js"></script>
+
+
+    <link rel="stylesheet" href="form_plugin/css/input.css">
+    <link rel="stylesheet" href="search_plugin/search.css">
+    <link rel="stylesheet" href="cartdown_plugin/cartdown.css">
+    <link rel="stylesheet" href="account_plugin/account.css">
+    <link rel="stylesheet" href="list_plugin/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="list_plugin/fonts/iconfont.css">
+
+    <!-- <link rel="stylesheet" href="form_plugin/css/input.css"> -->
+
+
+
+    <!-- symbol字体用法 -->
+    <!-- <style>
+        .icon {
+            width: 100px;
+            height: 100px;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+    <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-nvshihunmao"></use>
+    </svg> -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <!-- home.end键到行首行尾 -->
+        <div class="logo">
+            <svg class="icon_logo" aria-hidden="true">
+        <use xlink:href="#icon-wenju"></use>
+    </svg>
+            <div class="logo_word">
+                <h1>Stationery</h1>
+                <h1>Store</h1>
+                <!-- <span>Stationery</span>
+                <br> -->
+                <!-- <span>Store</span> -->
+            </div>
+
+        </div>
+        <div class="hd_nav">
+
+            <ul>
+
+                <li class="log">
+                    <a href="#">登陆&nbsp;/&nbsp;注册</a>
+                </li>
+                <li class="sear">
+                    <svg class="icon_nav" aria-hidden="true">
+  <use xlink:href="#icon-sousuo4"></use>
+</svg>
+                    <a href="#">搜索</a>
+                </li>
+                <li class="cart">
+                    <svg class="icon_nav" aria-hidden="true">
+  <use xlink:href="#icon-Icon_Bo-"></use>
+</svg>
+                    <a href="#">购物车</a>
+                </li>
+
+                <li class="acc">
+                    <svg class="icon_nav" aria-hidden="true">
+  <use xlink:href="#icon-yonghu3"></use>
+</svg>
+                    <a href="#">我的账户</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 登陆框模块开始 -->
+        <div class="container">
+            <div class="frame">
+                <!-- 躲避冲突 -->
+                <div class="navv">
+                    <ul class "links">
+                        <li class="signin-active"><a class="btn">Sign in</a></li>
+                        <li class="signup-inactive"><a class="btn">Sign up </a></li>
+                    </ul>
+                </div>
+                <div ng-app ng-init="checked = false">
+                    <form class="form-signin" action="" method="post" name="form">
+                        <label for="username">Username</label>
+                        <input class="form-styling" type="text" name="username" placeholder="" />
+                        <label for="password">Password</label>
+                        <input class="form-styling" type="text" name="password" placeholder="" />
+                        <input type="checkbox" id="checkbox" style="display: none;" />
+                        <label for="checkbox"><span class="ui"></span>Keep me signed in</label>
+                        <div class="btn-animate">
+                            <a class="btn-signin" style="color:white;">Sign in</a>
+                        </div>
+                    </form>
+
+                    <form class="form-signup" action="" method="post" name="form">
+                        <label for="fullname">Full name</label>
+                        <input class="form-styling" type="text" name="fullname" placeholder="" />
+                        <label for="email">Email</label>
+                        <input class="form-styling" type="text" name="email" placeholder="" />
+                        <label for="password">Password</label>
+                        <input class="form-styling" type="text" name="password" placeholder="" />
+                        <label for="confirmpassword">Confirm password</label>
+                        <input class="form-styling" type="text" name="confirmpassword" placeholder="" />
+                        <a ng-click="checked = !checked" class="btn-signup">Sign Up</a>
+                    </form>
+
+                    <div class="success">
+                        <svg width="270" height="270" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" id="check" ng-class="checked ? 'checked ' : ' '">
+                 <path fill="#ffffff" d="M40.61,23.03L26.67,36.97L13.495,23.788c-1.146-1.147-1.359-2.936-0.504-4.314
+                  c3.894-6.28,11.169-10.243,19.283-9.348c9.258,1.021,16.694,8.542,17.622,17.81c1.232,12.295-8.683,22.607-20.849,22.042
+                  c-9.9-0.46-18.128-8.344-18.972-18.218c-0.292-3.416,0.276-6.673,1.51-9.578" />
+                <div class="successtext">
+                   <p> Thanks for signing up! Check your email for confirmation.</p>
+                </div>
+             </div>
+      </div>
+      
+      <div class="forgot">
+        <a href="#">Forgot your password?</a>
+      </div>
+      
+      <div>
+        <div class="cover-photo"></div>
+        <div class="profile-photo"></div>
+        <h1 class="welcome">Welcome, Chris</h1>
+        <a class="btn-goback" value="Refresh" onClick="history.go()">Go back</a>
+      </div>
+  </div>
+    
+  <a id="refresh" value="Refresh" onClick="history.go()">
+    <svg class="refreshicon"   version="1.1" id="Capa_1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         width="25px" height="25px" viewBox="0 0 322.447 322.447" style="enable-background:new 0 0 322.447 322.447;"
+         xml:space="preserve">
+         <path  d="M321.832,230.327c-2.133-6.565-9.184-10.154-15.75-8.025l-16.254,5.281C299.785,206.991,305,184.347,305,161.224
+                c0-84.089-68.41-152.5-152.5-152.5C68.411,8.724,0,77.135,0,161.224s68.411,152.5,152.5,152.5c6.903,0,12.5-5.597,12.5-12.5
+                c0-6.902-5.597-12.5-12.5-12.5c-70.304,0-127.5-57.195-127.5-127.5c0-70.304,57.196-127.5,127.5-127.5
+                c70.305,0,127.5,57.196,127.5,127.5c0,19.372-4.371,38.337-12.723,55.568l-5.553-17.096c-2.133-6.564-9.186-10.156-15.75-8.025
+                c-6.566,2.134-10.16,9.186-8.027,15.751l14.74,45.368c1.715,5.283,6.615,8.642,11.885,8.642c1.279,0,2.582-0.198,3.865-0.614
+                l45.369-14.738C320.371,243.946,323.965,236.895,321.832,230.327z"/>
+    </svg>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- 搜索模块 -->
+            <div class="wrap">
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                    <button type="submit" class="searchButton">
+        <i class="fa fa-search">
+        <svg class="icon_search" aria-hidden="true">
+  <use xlink:href="#icon-sousuo3"></use>
+</svg>
+        </i>
+     </button>
+
+                </div>
+            </div>
+            <!-- 购物车模块 -->
+            <div class="cart-dropdown">
+                <ul>
+                    <li class="single-cart-item">
+                        <div class="cart-img">
+                            <a href="single-product.html"><img src="uploaded_img/1.png" alt=""></a>
+                        </div>
+                        <div class="cart-content">
+                            <h5 class="product-name"><a href="single-product.html">Odio tortor consequat</a></h5>
+                            <span class="cart-price">1 × $90.00</span>
+                        </div>
+                        <div class="cart-remove">
+                            <a title="Remove" href="#"><i class="fa fa-times"></i></a>
+                        </div>
+                    </li>
+                    <li class="single-cart-item">
+                        <div class="cart-img">
+                            <a href="single-product.html"><img src="uploaded_img/2.png" alt=""></a>
+                        </div>
+                        <div class="cart-content">
+                            <h5 class="product-name"><a href="single-product.html">Auctor sem</a></h5>
+                            <span class="cart-price">1 × $100.00</span>
+                        </div>
+                        <div class="cart-remove">
+                            <a title="Remove" href="#"><i class="fa fa-times"></i></a>
+                        </div>
+                    </li>
+                </ul>
+                <p class="cart-subtotal"><strong>Subtotal:</strong> <span class="float-right">$190.00</span></p>
+                <p class="cart-btn">
+                    <a href="cart.html">View cart</a>
+                    <a href="checkout.html">Checkout</a>
+                </p>
+            </div>
+            <!-- 我的账户模块 -->
+            <div class="currency-dropdown">
+                <ul class="menu-top-menu">
+                    <li><a href="my-account.html">My Account</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                    <li><a href="cart.html">Shopping cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="login-register.html">Log In</a></li>
+                </ul>
+                <div class="switcher">
+                    <div class="language">
+                        <span class="switcher-title">Language: </span>
+                        <div class="switcher-menu">
+                            <ul>
+                                <li><a href="#">English</a>
+                                    <ul class="switcher-dropdown">
+                                        <li><a href="#">German</a></li>
+                                        <li><a href="#">French</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="currency">
+                        <span class="switcher-title">Currency: </span>
+                        <div class="switcher-menu">
+                            <ul>
+                                <li><a href="#">$ USD</a>
+                                    <ul class="switcher-dropdown">
+                                        <li><a href="#">€ EUR</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </header>
+    <section>
+        <aside>
+            <div class="as_sort">
+                <div class="nav">
+                    <div class="nav-top">
+                        <div id="mini" style="border-bottom:1px solid rgba(255,255,255,.1)"><img src="list_plugin/images/mini.png"></div>
+                    </div>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="javascript:;">
+
+                                <svg class="icon_side" aria-hidden="true">
+  <use xlink:href="#icon-huaban"></use>
+</svg>
+                                <span>书写工具</span>
+                                <i class="my-icon nav-more">
+                                </i>
+                            </a>
+                            <ul>
+                                <li><a href="javascript:;"><span>铅笔</span></a></li>
+                                <li><a href="javascript:;"><span>圆珠笔</span></a></li>
+                                <li><a href="javascript:;"><span>钢笔</span></a></li>
+                                <li><a href="javascript:;"><span>中性笔</span></a></li>
+                                <li><a href="javascript:;"><span>油性笔</span></a></li>
+                                <li><a href="javascript:;"><span>涂卡笔</span></a></li>
+                                <li><a href="javascript:;"><span>批改笔</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;">
+                                <svg class="icon_side" aria-hidden="true">
+  <use xlink:href="#icon-dangan1"></use>
+</svg>
+                                <span>纸质本册</span><i class="my-icon nav-more"></i></a>
+                            <ul>
+                                <li><a href="javascript:;"><span>软抄笔记本</span></a></li>
+                                <li><a href="javascript:;"><span>硬抄笔记本</span></a></li>
+                                <li><a href="javascript:;"><span>活页本</span></a></li>
+                                <li><a href="javascript:;"><span>线圈本</span></a></li>
+                                <li><a href="javascript:;"><span>草稿本</span></a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;">
+                                <svg class="icon_side" aria-hidden="true">
+  <use xlink:href="#icon-chizi
+"></use>
+</svg>
+                                <span>测量工具</span><i class="my-icon nav-more"></i></a>
+                            <ul>
+                                <li><a href="javascript:;"><span>直尺</span></a></li>
+                                <li><a href="javascript:;"><span>三角板</span></a></li>
+                                <li><a href="javascript:;"><span>卷尺</span></a></li>
+                                <li><a href="javascript:;"><span>圆规</span></a></li>
+                                <li><a href="javascript:;"><span>量角器</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;">
+                                <svg class="icon_side" aria-hidden="true">
+  <use xlink:href="#icon-tubiaozhizuomoban
+"></use>
+</svg>
+                                <span>绘画用品</span><i class="my-icon nav-more"></i></a>
+                            <ul>
+                                <li><a href="javascript:;"><span>油画颜料</span></a></li>
+                                <li><a href="javascript:;"><span>水彩颜料</span></a></li>
+                                <li><a href="javascript:;"><span>调色剂</span></a></li>
+                                <li><a href="javascript:;"><span>画板</span></a></li>
+                                <li><a href="javascript:;"><span>画布</span></a></li>
+                                <li><a href="javascript:;"><span>素描纸</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;">
+                                <svg class="icon_side" aria-hidden="true">
+  <use xlink:href="#icon-dingshuqi
+"></use>
+</svg>
+                                <span>桌面用品</span><i class="my-icon nav-more"></i></a>
+                            <ul>
+                                <li><a href="javascript:;"><span>订书机</span></a></li>
+                                <li><a href="javascript:;"><span>计算器</span></a></li>
+                                <li><a href="javascript:;"><span>剪刀</span></a></li>
+                                <li><a href="javascript:;"><span>胶水</span></a></li>
+                                <li><a href="javascript:;"><span>订书钉</span></a></li>
+                                <li><a href="javascript:;"><span>笔筒</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;">
+                                <svg class="icon_side" aria-hidden="true">
+  <use xlink:href="#icon-dangan
+"></use>
+</svg>
+                                <span>文件管理</span><i class="my-icon nav-more"></i></a>
+                            <ul>
+                                <li><a href="javascript:;"><span>文件夹</span></a></li>
+                                <li><a href="javascript:;"><span>档案袋</span></a></li>
+                                <li><a href="javascript:;"><span>马尾夹</span></a></li>
+                                <li><a href="javascript:;"><span>票据本</span></a></li>
+                                <li><a href="javascript:;"><span>资料袋</span></a></li>
+                                <li><a href="javascript:;"><span>笔袋</span></a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="as_col">
+                <h2>&nbsp;&nbsp;&nbsp;&nbsp;颜色选择：</h2>
+                <br>
+                <div class="categori-checkbox">
+                    <form action="#">
+                        <ul>
+                            <li><input name="product-categori" type="checkbox">
+                                <div class="cola"><span style="color:#ebd78d">Yellow</span></div>
+
+                            </li>
+                            <li><input name="product-categori" type="checkbox">
+                                <div class="cola"><span style="color:#23c648">Green</span></div>
+
+                            </li>
+                            <li><input name="product-categori" type="checkbox">
+                                <div class="cola"><span style="color:#3573db">Blue</span></div>
+
+                            </li>
+                            <li><input name="product-categori" type="checkbox">
+                                <div class="cola"><span style="color:#6ee5dd">Cyan</span></div>
+
+                            </li>
+                            <li><input name="product-categori" type="checkbox">
+                                <div class="cola"><span style="color:#dd3e52">Red</span></div>
+
+                            </li>
+                            <li><input name="product-categori" type="checkbox">
+                                <div class="cola"><span style="color:#ea9e86">Orange</span></div>
+
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <div class="as_scr">
+
+                <h2>&nbsp;&nbsp;&nbsp;&nbsp;价格范围：</h2>
+                <br>
+                <div class="htmleaf-container">
+
+                    <div class="wrapper" style="width: 250px; margin: 0 auto; 
+                    padding-top:8px; background-color: ;">
+
+                        <div id="double_number_range" style="margin-top: ;"></div>
+
+                    </div>
+                    <button class="filter_button">确&nbsp;&nbsp;&nbsp;&nbsp;定</button>
+                </div>
+
+
+                <script>
+                    window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
+                </script>
+                <script src="filter_plugin/src/range_picker.js" type="text/javascript"></script>
+
+                <script type="text/javascript">
+                    ;
+                    (function() {
+                        "use strict";
+
+                        function dateFormat(date, fmt) {
+                            var o = {
+                                "M+": date.getMonth() + 1,
+                                "d+": date.getDate(),
+                            };
+                            if (/(y+)/.test(fmt)) {
+                                fmt = fmt.replace(RegExp.$1, (date.getFullYear() + "").substr(4 - RegExp.$1.length));
+                            }
+                            for (var k in o) {
+                                if (new RegExp("(" + k + ")").test(fmt)) {
+                                    fmt = fmt.replace(RegExp.$1, (RegExp.$1.length === 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+                                }
+                            }
+                            return fmt;
+                        }
+
+                        var startDate = new Date("2013/11/12"),
+                            endDate = new Date("2013/12/22"),
+                            offset = endDate - startDate;
+
+                        var d1 = $("#date_range").rangepicker({
+                            startValue: dateFormat(startDate, "yyyy/MM/dd"),
+                            endValue: dateFormat(endDate, "yyyy/MM/dd"),
+                            translateSelectLabel: function(currentPosition, totalPosition) {
+                                var timeOffset = offset * (currentPosition / totalPosition);
+                                var date = new Date(+startDate + parseInt(timeOffset));
+                                return dateFormat(date, "yyyy/MM/dd");
+                            }
+                        });
+                        var result = d1.getSelectValue();
+                        console.info(result);
+
+                        window.hello = $("#double_date_range").rangepicker({
+                            type: "double",
+                            startValue: dateFormat(startDate, "yyyy/MM/dd"),
+                            endValue: dateFormat(endDate, "yyyy/MM/dd"),
+                            translateSelectLabel: function(currentPosition, totalPosition) {
+                                var timeOffset = offset * (currentPosition / totalPosition);
+                                var date = new Date(+startDate + parseInt(timeOffset));
+                                return dateFormat(date, "yyyy/MM/dd");
+                            }
+                        });
+                        console.info(hello.getSelectValue());
+
+                        $("#number_range").rangepicker({
+                            startValue: 0,
+                            endValue: 100,
+                            translateSelectLabel: function(currentPosition, totalPosition) {
+                                return parseInt(100 * (currentPosition / totalPosition));
+                            }
+                        });
+
+                        $("#double_number_range").rangepicker({
+                            type: "double",
+                            startValue: 0,
+                            endValue: 100,
+                            translateSelectLabel: function(currentPosition, totalPosition) {
+                                return parseInt(100 * (currentPosition / totalPosition));
+                            }
+                        });
+
+                        $("#double_number_range").mousemove(function() {
+                            var m = $(".range-picker").children('span:eq(4)').text();
+                            var n = $(".range-picker").children('span:eq(5)').text();
+
+                            console.log(m);
+                            $(".range-picker").children('span:eq(2)').text(m);
+                            $(".range-picker").children('span:eq(1)').text(n);
+
+                            console.log('999');
+                        });
+
+
+
+
+
+
+                    }());
+                </script>
+
+
+            </div>
+
+            <div class="as_disc">
+                <img src="img_fixed/打折2.jpg" alt="">
+            </div>
+        </aside>
+        <article>
+
+            <div class="ar_intr">
+                <div class="htmleaf-container">
+
+                    <div class="ccontainer">
+                        <ul id="partial-view">
+                            <li>
+                                <img src="uploaded_img\1.png" />
+                            </li>
+                            <li>
+                                <img src=" uploaded_img\2.png" />
+                            </li>
+                            <li>
+                                <img src=" uploaded_img\3.png" />
+                            </li>
+                            <li>
+                                <img src=" uploaded_img\4.png" />
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+                <script src="slider_plugin/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+                <script src="slider_plugin/dist/partialviewslider.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        var partialView = $('#partial-view').partialViewSlider();
+
+                        $('#prev').on('click', function() {
+                            partialView.prev();
+                        });
+                        $('#next').on('click', function() {
+                            partialView.next();
+                        });
+                        $('#play').on('click', function() {
+                            partialView.play();
+                        });
+                        $('#pause').on('click', function() {
+                            partialView.pause();
+                        });
+                    });
+                </script>
+
+            </div>
+
+            <div class="ar_sort">
+                <div class="bottom_line">
+                    <div class="mark">
+                        <svg class="icon_mark" aria-hidden="true">
+        <use xlink:href="#icon-liebiao1"></use>
+    </svg>
+                    </div>
+                    <div class="mark">
+                        <svg class="icon_mark" aria-hidden="true">
+        <use xlink:href="#icon-liebiao"></use>
+    </svg>
+                    </div>
+
+                    <div class="select_box">
+                        <select class="selectt">
+  <option value ="volvo">书写工具</option>
+  <option value ="saab">纸质本册</option>
+  <option value="opel">绘画工具</option>
+  <option value="audi">桌面用品</option>
+  <option value ="volvo">测量工具</option>
+  <option value ="saab">文件管理</option>
+</select>
+                    </div>
+                    <span class="select_sort">类别：</span>
+
+                </div>
+            </div>
+            </div>
+            <div class="ar_con">
+                <ul>
+                    <li class="items">
+                        <img src=" uploaded_img\5.png" />
+                        <div class="discript">
+                            <div class="discript_word">
+                                <h2>得力软抄笔记本</h2>
+                            </div>
+                            <div class="discript_price">
+                                <h2 class="green">￥12.9</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <img src=" uploaded_img\6.png" />
+                        <div class="discript">
+                            <div class="discript_word">
+                                <h2>得力盒装中性笔（12只）</h2>
+                            </div>
+                            <div class="discript_price">
+                                <h2 class="green">￥18.0</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <img src=" uploaded_img\7.png" />
+                        <div class="discript">
+                            <div class="discript_word">
+                                <h2>芯陌古风手账礼盒</h2>
+                            </div>
+                            <div class="discript_price">
+                                <h2 class="green">￥39.9</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <img src=" uploaded_img\8.png" />
+                        <div class="discript">
+                            <div class="discript_word">
+                                <h2>KUKUYO便携订书机</h2>
+                            </div>
+                            <div class="discript_price">
+                                <h2 class="green">￥9.9</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <img src=" uploaded_img\9.png" />
+                        <div class="discript">
+                            <div class="discript_word">
+                                <h2>得力文档夹（5只装）</h2>
+                            </div>
+                            <div class="discript_price">
+                                <h2 class="green">￥14.9</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <img src=" uploaded_img\10.png" />
+                        <div class="discript">
+                            <div class="discript_word">
+                                <h2>晨光透明文件夹（3只装）</h2>
+                            </div>
+                            <div class="discript_price">
+                                <h2 class="green">￥11.9</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <img src=" uploaded_img\11.png" />
+                        <div class="discript">
+                            <div class="discript_word">
+                                <h2>Touch7代马克笔（218色）</h2>
+                            </div>
+                            <div class="discript_price">
+                                <h2 class="green">￥88.0</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <img src=" uploaded_img\12.png" />
+                        <div class="discript">
+                            <div class="discript_word">
+                                <h2>得力水彩笔(36色)</h2>
+                            </div>
+                            <div class="discript_price">
+                                <h2 class="green">￥28.0</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <img src=" uploaded_img\13.png" />
+                        <div class="discript">
+                            <div class="discript_word">
+                                <h2>限量款凌美钢笔</h2>
+                            </div>
+                            <div class="discript_price">
+                                <h2 class="green">￥129。0</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <img src=" uploaded_img\14.png" />
+                        <div class="discript">
+                            <div class="discript_word">
+                                <h2>tramol钢笔</h2>
+                            </div>
+                            <div class="discript_price">
+                                <h2 class="green">￥30.0</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <img src=" uploaded_img\15.png" />
+                        <div class="discript">
+                            <div class="discript_word">
+                                <h2>得力A4打印纸</h2>
+                            </div>
+                            <div class="discript_price">
+                                <h2 class="green">￥49.9</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <img src=" uploaded_img\16.png" />
+                        <div class="discript">
+                            <div class="discript_word">
+                                <h2>Maries素描纸（40张）</h2>
+                            </div>
+                            <div class="discript_price">
+                                <h2 class="green">￥21.6</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <img src=" uploaded_img\17.png" />
+                        <div class="discript">
+                            <div class="discript_word">
+                                <h2>得力胶带（6只装）</h2>
+                            </div>
+                            <div class="discript_price">
+                                <h2 class="green">￥12.0</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <img src=" uploaded_img\18.png" />
+                        <div class="discript">
+                            <div class="discript_word">
+                                <h2>Tollow大容量笔袋</h2>
+                            </div>
+                            <div class="discript_price">
+                                <h2 class="green">￥15.9</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <img src=" uploaded_img\19.png" />
+                        <div class="discript">
+                            <div class="discript_word">
+                                <h2>得力考试涂卡笔（12只）</h2>
+                            </div>
+                            <div class="discript_price">
+                                <h2 class="green">￥36.0</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <img src=" uploaded_img\20.png" />
+                        <div class="discript">
+                            <div class="discript_word">
+                                <h2>得力橡皮（4只）</h2>
+                            </div>
+                            <div class="discript_price">
+                                <h2 class="green">￥8.0</h2>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+
+            </div>
+            <div class="ar_cpag">
+                <div class="col-lg-6 mt-5">
+                    <div class="card" data-tabulation>
+
+
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-info" data-tabulation-nav="prev">prev</a>
+                            <a href="#" class="btn btn-light" data-tabulation-nav="1">1</a>
+                            <a href="#" class="btn btn-light" data-tabulation-nav="2">2</a>
+                            <a href="#" class="btn btn-light" data-tabulation-nav="3">3</a>
+                            <a href="#" class="btn btn-light" data-tabulation-nav="4">4</a>
+                            <a href="#" class="btn btn-light" data-tabulation-nav="5">5</a>
+                            <a href="#" class="btn btn-info" data-tabulation-nav="next">next</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- </div> -->
+                <!-- </div> -->
+
+
+                <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+                <script src="pagination_plugin/js/jquery.tabulation.js"></script>
+                <script>
+                    $('.js-tabulation1').tabulation({
+                        navigation: {
+                            active: {
+                                class: 'tabulation-active-button1'
+                            }
+                        }
+                    });
+                    $('.js-tabulation2').tabulation({
+                        navigation: {
+                            active: {
+                                class: 'btn-light'
+                            }
+                        },
+                        tabulation: {
+                            active: {
+                                class: 'tab-active'
+                            }
+                        }
+                    });
+                </script>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>

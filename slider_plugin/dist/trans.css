@@ -1,0 +1,43 @@
+html {
+    font-size: 11px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@media (min-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+i.material-icons {
+    vertical-align: sub;
+    font-size: 110%;
+}
+
+.ccontainer {
+    height: 60%;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.ccontainer img {
+    width: 460px;
+    height: 460px;
+}

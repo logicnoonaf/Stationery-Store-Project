@@ -1,0 +1,18 @@
+body {
+    background-color: #fafafa;
+    font-family: 'Open Sans';
+}
+
+.container {
+    margin: 150px auto;
+}
+
+.tabulation-active-button1 {
+    background: black !important;
+    color: red !important;
+}
+
+.tabulation-active-button2 {
+    background: red !important;
+    color: black !important;
+}

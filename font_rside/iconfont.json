@@ -1,0 +1,289 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "648756",
+      "name": "笔记",
+      "font_class": "biji",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "878684",
+      "name": "尺寸",
+      "font_class": "gouwuche",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "1240089",
+      "name": "尺子",
+      "font_class": "chizi",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "1403050",
+      "name": "笔",
+      "font_class": "ink-pen-write-office-stationery-fountain-product-bcbfea",
+      "unicode": "e77b",
+      "unicode_decimal": 59259
+    },
+    {
+      "icon_id": "2170161",
+      "name": "笔编辑",
+      "font_class": "bibianji",
+      "unicode": "e6f8",
+      "unicode_decimal": 59128
+    },
+    {
+      "icon_id": "2932818",
+      "name": "笔",
+      "font_class": "bi",
+      "unicode": "e7fb",
+      "unicode_decimal": 59387
+    },
+    {
+      "icon_id": "3207736",
+      "name": "笔",
+      "font_class": "icon-checkin",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "3724086",
+      "name": "档案",
+      "font_class": "dangan",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "3739982",
+      "name": "档案",
+      "font_class": "dangan1",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "3759137",
+      "name": "剪刀",
+      "font_class": "icon-",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "3836627",
+      "name": "订书器",
+      "font_class": "dingshuqi",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "3841070",
+      "name": "笔",
+      "font_class": "ziyuan",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "4503757",
+      "name": "笔",
+      "font_class": "noun__cc",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "4503764",
+      "name": "尺",
+      "font_class": "noun__cc1",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "4503769",
+      "name": "订书器",
+      "font_class": "noun__cc2",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "4512351",
+      "name": "尺子",
+      "font_class": "chizi1",
+      "unicode": "e71e",
+      "unicode_decimal": 59166
+    },
+    {
+      "icon_id": "5053167",
+      "name": "尺子",
+      "font_class": "chizi2",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "5164029",
+      "name": "本子",
+      "font_class": "benzi",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "5168946",
+      "name": "笔刷",
+      "font_class": "huaban",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "5168977",
+      "name": "尺",
+      "font_class": "huaban1",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "5168978",
+      "name": "剪刀",
+      "font_class": "huaban2",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "5180928",
+      "name": "尺子",
+      "font_class": "chizi3",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "5194061",
+      "name": "笔记本",
+      "font_class": "bijiben",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "5202527",
+      "name": "剪刀",
+      "font_class": "jiandao",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "5213822",
+      "name": "笔记本",
+      "font_class": "bijiben1",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "5220631",
+      "name": "剪刀",
+      "font_class": "jiandao1",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "5244513",
+      "name": "笔记本",
+      "font_class": "bijiben2",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "5308117",
+      "name": "笔记本",
+      "font_class": "bijiben3",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "5649902",
+      "name": "本子",
+      "font_class": "benzi1",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "6211876",
+      "name": "5-1档案",
+      "font_class": "-dangan",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "6536057",
+      "name": "物品-档案",
+      "font_class": "wp-da",
+      "unicode": "e726",
+      "unicode_decimal": 59174
+    },
+    {
+      "icon_id": "6626197",
+      "name": "笔",
+      "font_class": "bi1",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "6953088",
+      "name": "笔记本",
+      "font_class": "thin-_notebook_p",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "8153876",
+      "name": "尺子",
+      "font_class": "tapemeasure",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "8666835",
+      "name": "剪刀",
+      "font_class": "jiandao2",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "11269301",
+      "name": "维修档案",
+      "font_class": "weixiudangan",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    },
+    {
+      "icon_id": "11742030",
+      "name": "画板",
+      "font_class": "tubiaozhizuomoban",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "12387137",
+      "name": "笔",
+      "font_class": "bi2",
+      "unicode": "e90a",
+      "unicode_decimal": 59658
+    },
+    {
+      "icon_id": "13468948",
+      "name": "物料档案",
+      "font_class": "wuliaodangan",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "13753015",
+      "name": "笔记本",
+      "font_class": "bijiben4",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    }
+  ]
+}
